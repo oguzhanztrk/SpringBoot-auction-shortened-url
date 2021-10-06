@@ -1,10 +1,9 @@
 package com.noins.auctionshortenedurl.model;
 
-import lombok.Data;
 
 import java.util.Objects;
 import java.util.stream.Collectors;
-@Data
+
 public class UrlDto
 {
     private String url;

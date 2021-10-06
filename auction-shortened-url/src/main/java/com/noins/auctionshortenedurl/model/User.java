@@ -2,7 +2,6 @@ package com.noins.auctionshortenedurl.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sun.istack.Nullable;
-import lombok.Data;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -78,5 +77,9 @@ public class User  {
 
     public void setUrlList(List<Url> urlList) {
         this.urlList = urlList;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }

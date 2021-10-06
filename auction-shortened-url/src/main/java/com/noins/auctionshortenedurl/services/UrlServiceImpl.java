@@ -47,7 +47,7 @@ public class UrlServiceImpl implements UrlService {
         encodedUrl = Hashing.murmur3_32()
                 .hashString(url.concat(time.toString()), StandardCharsets.UTF_8)
                 .toString();
-        encodedUrl = "http://localhost:8080/link/" +encodedUrl;
+        encodedUrl = "https://spring-auction-shortened-url.herokuapp.com/link/" +encodedUrl;
         return  encodedUrl;
     }
 

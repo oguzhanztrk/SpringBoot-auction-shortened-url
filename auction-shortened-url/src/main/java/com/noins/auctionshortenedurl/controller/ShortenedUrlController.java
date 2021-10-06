@@ -77,7 +77,7 @@ public class ShortenedUrlController {
             urlErrorResponseDto.setStatus("400");
             return new ResponseEntity<UrlErrorResponseDto>(urlErrorResponseDto,HttpStatus.OK);
         }
-        Url urlToRet = urlService.getEncodedUrl("http://localhost:8080/link/"+shortLink);
+        Url urlToRet = urlService.getEncodedUrl("https://spring-auction-shortened-url.herokuapp.com/link/"+shortLink);
 
         if(urlToRet == null)
         {
